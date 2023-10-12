@@ -1,11 +1,12 @@
 // import { NavLink, Outlet } from "react-router-dom";
+import { Layout } from "antd";
 import Navigation from "./components/Navigation";
-import { Header } from "antd/es/layout/layout";
+import { Content, Header } from "antd/es/layout/layout";
 import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div
+    <Layout
       style={{
         height: "100%",
         position: "absolute",
@@ -26,8 +27,10 @@ function App() {
         <Navigation />
       </Header>
 
-      <Outlet />
-    </div>
+      <Content>
+        <Outlet />
+      </Content>
+    </Layout>
   );
 }
 

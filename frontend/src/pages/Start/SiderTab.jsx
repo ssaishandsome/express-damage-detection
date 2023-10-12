@@ -47,6 +47,9 @@ const SiderTab = () => {
           style={{
             padding: 0,
             background: colorBgContainer,
+            display: "flex",
+            alignItems: "center",
+            height: 50,
           }}
         >
           <Button
@@ -56,7 +59,6 @@ const SiderTab = () => {
             style={{
               fontSize: "16px",
               width: 64,
-              height: 64,
             }}
           />
         </Header>
